@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
@@ -8,18 +8,12 @@ import { DialogComponent } from './dialog/dialog.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'appTest';
+  title = 'appTest'; 
 
-  constructir(private dialog : MatDialog){
+  constructor(private matDialog)
 
-  }
-
-openDialog(){
-  this.dialog.open(DialogComponent, {
-    
-  });
-}
 }
 
 
 //https://www.youtube.com/watch?v=jGbP620NahE
+//https://www.youtube.com/watch?v=ZgT6tQodLnM
